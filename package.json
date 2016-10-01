@@ -1,0 +1,19 @@
+{
+  "name": "CarsBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akhilesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "mongodb": "*",
+    "get-json": "*",
+    "body-parser": "*",
+    "express-handlebars": "*"
+  }
+}

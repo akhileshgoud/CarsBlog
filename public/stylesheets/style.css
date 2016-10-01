@@ -1,0 +1,19 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.body-content {
+    padding-top: 80px;
+}
+
+.btn {
+	margin:  5px;
+}
+
+.topbtn {
+    margin: 7px 5px 0px 5px;
+}
+
+.bodybtn {
+    margin: 5px;
+}
