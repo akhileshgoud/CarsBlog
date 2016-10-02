@@ -14,6 +14,8 @@
     "mongodb": "*",
     "get-json": "*",
     "body-parser": "*",
-    "express-handlebars": "*"
+    "express-handlebars": "*",
+    "bootstrap": "*",
+    "jquery": "*"
   }
 }
