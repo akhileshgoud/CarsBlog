@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017/uitestDatabase';
+var url = 'mongodb://carsblog_ag:cbag@ds139655.mlab.com:39655/carsblog-ag';
 
 router.get('/', function(req, res, next) {
   res.render('cars');

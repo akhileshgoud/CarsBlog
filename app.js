@@ -5,7 +5,7 @@ var exphbs = require('express-handlebars');
 var getJSON = require('get-json');
 
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017/uitestDatabase';
+var url = 'mongodb://carsblog_ag:cbag@ds139655.mlab.com:39655/carsblog-ag';
 
 var routes = require('./routes/index');
 var cars = require('./routes/cars');
@@ -13,6 +13,8 @@ var cars = require('./routes/cars');
 
 // Init App
 var app = express();
+
+app.set('port', (process.env.PORT || 5001));
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
@@ -45,5 +47,14 @@ app.use('/resetAllCars', function(req, res){
 app.use('/', routes);
 app.use('/cars', cars);
 
-app.listen(3456);
-console.log("App is ready at localhost:3456");
+//app.listen(3456);
+//console.log("App is ready at localhost:3456");
+
+
+//For avoidong Heroku $PORT error
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
