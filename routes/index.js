@@ -37,9 +37,10 @@ router.get('/getCarsFromApi', function(req, res, next) {
                 }
             }
         });
-       // var x = getAllCars(db, res);
+       if (!err) {
+            res.redirect('/cars');  
+       }
       });
-  res.render('index');
 });
 
 

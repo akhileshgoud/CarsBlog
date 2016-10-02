@@ -1,7 +1,8 @@
 function getAllCars() {
     $.getJSON( "cars/getAllCars", function( data ) {
 		//console.log(data);
-		var htmlData = '<div class="panel panel-primary" id="data-tbl">'
+		var htmlData = '<a href="/">Go Back</a><br>'
+                        +'<div class="panel panel-primary" id="data-tbl">'
                         +'<div class="panel-heading" id="panel-head">Latest Cars</div>'
                         +'<div class="panel-body" id="panel-content">'
                             +'<table class="table table-striped table-bordered">'
