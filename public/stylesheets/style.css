@@ -17,3 +17,17 @@ body {
 .bodybtn {
     margin: 5px;
 }
+
+#myFooter {
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#footer-link {
+	color: #000;
+	padding-bottom: 20px;
+}
+
+#footer-link:hover {
+	text-decoration: underline;
+}
